@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transistor Wrapper Demo App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>Transistor SDK</h1>
+        
+        <div class="card">
+          <h2>Wrapper Status</h2>
+          <div class="status-row">
+            <span>Is Native App:</span>
+            <span id="wrapper-status" class="badge badge-checking">Checking...</span>
+          </div>
+          <div class="status-row">
+            <span>App Version:</span>
+            <span id="app-version" class="text-highlight">-</span>
+          </div>
+          <div class="status-row">
+            <span>Enabled Plugins:</span>
+            <span id="enabled-plugins" class="text-highlight">-</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Toast Plugin</h2>
+          <div class="input-group">
+            <input type="text" id="toast-message" placeholder="Message..." value="Hello from Webapp!" />
+            <button id="btn-show-toast">Show Toast</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>App Launcher Module</h2>
+            <button id="btn-refresh-apps" class="btn-secondary">Load Apps</button>
+          </div>
+          <div class="search-bar">
+            <input type="text" id="app-search-input" placeholder="Search installed apps..." />
+          </div>
+          <div id="apps-grid" class="apps-grid">
+            <p class="empty-state">Click "Load Apps" to list host applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

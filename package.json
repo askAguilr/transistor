@@ -1,0 +1,10 @@
+{
+  "name": "lovandroid-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@transistorjs/wrapper-types && npm run build --workspace=@transistorjs/wrapper-core && npm run build --workspace=@transistorjs/apps-plugin && npm run build --workspace=@transistorjs/toast-plugin && npm run build --workspace=demo-app"
+  }
+}

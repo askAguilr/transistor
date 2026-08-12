@@ -1,0 +1,15 @@
+{
+  "name": "Transistor Demo PWA",
+  "short_name": "Transistor Demo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#863bff",
+  "theme_color": "#863bff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
